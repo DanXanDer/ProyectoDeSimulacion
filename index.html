@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+
+    <title>GRUPO 03 - CAP I</title>
+    <!--
+
+TemplateMo 548 Training Studio
+
+https://templatemo.com/tm-548-training-studio
+
+-->
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-training-studio.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <video autoplay muted loop id="bg-video">
+            <source src="img/video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-overlay header-text">
+            <div class="caption">
+                <h6>GRUPO 03</h6>
+                <h2>SIMULACIÓN DE <em>SISTEMAS</em></h2>
+                <div class="main-button scroll-to-section">
+                    <a href="#features">CAPACIDAD I</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+
+    <!-- ***** Our Classes Start ***** -->
+    <section class="section" id="our-classes">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>CAPÍTULOS <em> DEL INFORME</em></h2>
+                        <img src="assets/images/line-dec.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="tabs">
+                <div class="col-lg-4">
+                    <ul>
+                        <li><a href='#tabs-1'><img src="img/matematicas.png" alt="">Los números aleatorios y
+                                pseudoaleatorios</a></li>
+                        <li><a href='#tabs-2'><img src="img/mixto.png" alt="">Método congruencial mixto</a></a></li>
+                        <li><a href='#tabs-3'><img src="img/pensar.png" alt="">Método congruencial
+                                multiplicativo</a></a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-8">
+                    <section class='tabs-content'>
+                        <article id='tabs-1'>
+                            <img src="img/aleatorio.jpg" alt="Números aleatorios y pseudoaleatorios">
+                            <div class="login-box" >
+                                <h2>Ingrese el valor de los parámetros</h2>
+                                <form>
+                                    <div class="user-box">
+                                        <input type="text" class="minimo" required="">
+                                        <label>Mínimo</label>
+                                    </div>
+                                    <div class="user-box">
+                                        <input type="text" class="maximo" required="">
+                                        <label>Máximo</label>
+
+                                    </div>
+                                    
+                                </form>
+                                <button type="button" class="btn btn-success" id="calcular-aleatorio">Generar número aleatorio</button>
+                                <div id="result">
+
+                                </div>
+                            </div>
+                        </article>
+                        <article id='tabs-2'>
+                            <img src="assets/images/Metodo-mixto.png" alt="Metodo congruencial mixto">
+                            <h4 class="formula-mixto">Fórmula: X<sub>n</sub> + 1 = (aX<sub>n</sub> + c) Mod m</h4>
+
+                            <div class="login-box" id="login-boxMixto">
+                                <h2>Ingrese el valor de los parámetros</h2>
+                                <form>
+                                    <div class="user-box">
+                                        <input type="text" class="semillaMixto" required="">
+                                        <label>Valor de la semilla X<sub>0</sub></label>
+                                        <span class="errorSemillaMixto"></span>
+                                    </div>
+                                    <div class="user-box">
+                                        <input type="text" class="parameterAMixto" required="">
+                                        <label>Valor de a</label>
+                                        <span class="errorAMixto">aaa</span>
+                                    </div>
+                                    <div class="user-box" style="margin-top: 20px">
+                                        <input type="text" class="parameterC" required="">
+                                        <label>Valor de c</label>
+                                        <span class="errorC"></span>
+                                    </div>
+                                    <div class="user-box" style="margin-top: 20px">
+                                        <input type="text" class="parameterMixto" required="">
+                                        
+                                        <label>Valor de m</label>
+                                        <span class="errorMixtoM">M tiene que ser el valor más alto</span>
+                                    </div>
+                                </form>
+                                <button type="button" class="btn btn-success" id="calcular-mixto" style="margin-top: 30px">Calcular</button>
+                            </div>
+                            <div class="container-mixto">
+                                <div class="title-mixto">
+                                    <h5>Números pseudoaleatorios generados</h5>
+                                </div>
+                                <div class="container-table">
+                                    <table class="table" id="table-mixto">
+                                    </table>
+                                    <div class="button-mixto">
+                                        <button type="button" class="btn btn-info">Generar nuevos
+                                            pseudoaleatorios</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="main-button" style="margin-top: 30px;">
+
+                            </div>
+                        </article>
+                        <article id='tabs-3'>
+                            <img src="assets/images/Metodo-multi.png" alt="Third Class">
+                            <h4 class="formula-multi">Fórmula: X<sub>n</sub> + 1 = (aX<sub>n</sub>) Mod m</h4>
+
+                            <div class="login-box" id="login-boxMulti">
+                                <h2>Ingrese el valor de los parámetros</h2>
+                                <form>
+                                    <div class="user-box">
+                                        <input type="text" class="semillaMulti" required="">
+                                        <label>Valor de la semilla X<sub>0</sub></label>
+                                        <span class="errorSemillaMulti"></span>
+                                    </div>
+                                    <div class="user-box">
+                                        <input type="text" class="parameterAMulti" required="">
+                                        <label>Valor de a</label>
+                                        <span class="errorAMulti"></span>
+                                    </div>
+                                    
+                                    <div class="user-box">
+                                        <input type="text" class="parameterMulti" required="">
+                                        <label>Valor de m</label>
+                                        <span class="errorMultiM"></span>
+                                    </div>
+                                    
+                                </form>
+                                <button type="button" class="btn btn-success" id="calcular-multi" style="margin-top: 30px">Calcular</button>
+                            </div>
+                            <div class="container-multi">
+                                <div class="title-multi">
+                                    <h5>Números pseudoaleatorios generados</h5>
+                                </div>
+                                <div class="container-table">
+                                    <table class="table" id="table-multi">
+                                    </table>
+                                    <div class="button-multi">
+                                        <button type="button" class="btn btn-info">Generar nuevos
+                                            pseudoaleatorios</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="main-button" style="margin-top: 30px;">
+
+                            </div>
+                        </article>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Testimonials Starts ***** -->
+    <section class="section" id="trainers" style= "margin-top:300px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>INTEGRANTES DEL <em>GRUPO 03</em></h2>
+                        <img src="assets/images/line-dec.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="trainer-item">
+                        <div class="image-thumb">
+                            <img class="img-grupo" src="img/danee.jpeg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span>Barzola Navarro</span>
+                            <h4>Danee Jhajaira</h4>
+
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="trainer-item">
+                        <div class="image-thumb">
+                            <img class="img-grupo" src="img/italo.jpeg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span>Bello Huamantuco</span>
+                            <h4>Ittalo Antonio</h4>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="trainer-item">
+                        <div class="image-thumb">
+                            <img class="img-grupo" src="img/daniel.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span>Gonzales Castillo</span>
+                            <h4>Daniel Alexander</h4>
+
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="trainer-item">
+                        <div class="image-thumb">
+                            <img class="img-grupo" src="img/jhamir.jpeg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span>Maldonado Vanegas</span>
+                            <h4> Yhamir Alfredo</h4>
+
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="trainer-item">
+                        <div class="image-thumb">
+                            <img class="img-grupo" src="img/padilla.jpeg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span>Padilla Matos </span>
+                            <h4> Jose Elias</h4>
+
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Testimonials Ends ***** -->
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2020 Villa el Salvador </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="main.js"></script>
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+    <script src="assets/js/mixitup.js"></script>
+    <script src="assets/js/accordions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
